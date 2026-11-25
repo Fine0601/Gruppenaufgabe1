@@ -26,7 +26,14 @@ article{
     background-color: #E8F4FA;
 }
 
+section{
+    border-style: double;
+    background-color: #9ca6ab;
+}
+
+
 blockquote{
     background-color: #E8F4FA;
     font-style: italic;
 }
+
