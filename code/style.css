@@ -1,0 +1,18 @@
+:root {
+  /* Spacing */
+  --spacing-primary: 1rem;     /* 15px / 16px */
+  --spacing-secondary: 0.5rem; /* 5px / 8px */
+
+  /* Corners */
+  --radius-primary: 10px;
+  --radius-secondary: 5px;
+
+  /* Colors */
+  --color-primary-bg: #0F172A;
+  --color-primary-text: #F8FAFC;
+  --color-primary-accent: #3B82F6;
+
+  --color-secondary-bg: #1E293B;
+  --color-secondary-text: #94A3B8;
+  --color-secondary-accent: #60A5FA;
+}
