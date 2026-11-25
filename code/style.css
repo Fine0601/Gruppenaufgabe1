@@ -16,3 +16,17 @@
   --color-secondary-text: #94A3B8;
   --color-secondary-accent: #60A5FA;
 }
+
+main{
+    text-align: center;
+}
+
+article{
+    border-style: double;
+    background-color: #E8F4FA;
+}
+
+blockquote{
+    background-color: #E8F4FA;
+    font-style: italic;
+}
