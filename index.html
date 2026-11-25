@@ -1,28 +1,193 @@
-
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsere Lebensläufe</title>
-</head>
-<body>
 
-    <header>
-        <h1>Unsere Lebensläufe</h1>
+<head>   <!-- Informationen über die Webseite. -->
+    <meta charset="UTF-8">  <!-- Damit Umlaute wie ä, ö und ü richtig angezeigt werden. -->
+    <title>Kira</title>  <!-- Das ist der Name, der oben im Browser-Tab steht. -->
+    <link rel="stylesheet" href="style.css">    <!-- href gibt Pfad zu css Datei an-->
+</head>
+
+<body>  <!-- alles, was man auf der Webseite sehen kann. -->
+
+    <header>    <!-- Überschrift und Begrüßung -->
+        <h1>Kira Kirchner</h1>    <!-- h1 ist die Hauptüberschrift der Seite. -->
+        <p>Willkommen auf meiner persönlichen Homepage</p>  <!-- Mit p Text schreiben. -->
     </header>
 
-    <nav>
-        <a href="index.html">Startseite</a>
-        <a href="lebenslauf1.html">Person 1</a>
-        <a href="lebenslauf2.html">Person 2</a>
-        <a href="lebenslauf3.html">Person 3</a>
+
+    <nav>   <!-- Links zu den einzelnen Bereichen. -->
+        <h2>Navigation</h2> <!-- h2 ist eine Überschrift für einen einzelnen Bereich. -->
+
+        <ul> <!-- ul macht eine Liste ohne Nummerierung. -->
+            <li>
+                <a href="#ueber-mich">Über mich</a> <!-- Mit a erstelle ich einen Link. Durch die ID springt man zum passenden Abschnitt. -->
+            </li>
+
+            <li>
+                <a href="#faehigkeiten">Fähigkeiten</a>
+            </li>
+
+            <li>
+                <a href="#hobbys">Hobbys</a>
+            </li>
+
+            <li>
+                 <a href="#haustiere">Haustiere</a>
+            </li>
+
+            <li>
+                <a href="#steckbrief">Steckbrief</a>
+            </li>
+
+            <li>
+                <a href="#kontakt">Kontakt</a>
+            </li>
+
+            <li>
+                <a href="holy-grail.html">Holy Grail Layout</a>
+            </li>
+
+        </ul>
     </nav>
 
-    <main>
-        <h2>Willkommen!</h2>
-        <p>Hier findet ihr die Lebensläufe unserer Gruppe.</p>
+    <main>  <!-- Hauptinhalt meiner Webseite. -->
+        <hr>
+        <section id="ueber-mich"> <!-- für einzelnen Themenbereiche -->
+            <h2>Über mich</h2>
+
+            <figure> <!-- figure um klarzustellen das da Bild zu diesem Inhalt gehört -->
+                <img src="https://i.pinimg.com/originals/63/cb/b6/63cbb6342f57c8eb7b3add1f88f0841e.jpg" alt= "Profilbild von Kira Kirchner" width="200">
+                <figcaption>Mein Profilbild</figcaption>
+            </figure>
+
+
+            <p>
+                HeyHoo Mein Name ist Kira Kirchner.
+                Ich bin 20 Jahre alt und lebe mein ganzes Leben schon hier.
+            </p>
+
+            <p>
+                 Auf dieser Seite erfährst du mehr über mich.
+                 Yey
+            </p>
+        </section>
+
+        <hr>    <!-- hr trennt die einzelnen Bereiche mit einer Linie -->
+
+        <section id="faehigkeiten">
+            <h2>Meine Fähigkeiten</h2>
+
+             <ul>    <!-- ul weil keine bestimmte Reihenfolge -->
+                 <li>Kreativität</li>   <!-- li einzelnen Eintrag in einer Liste. -->
+                 <li>Teamarbeit</li>
+                 <li>Geduld</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <article id="hobbys"><!--dieser Abschnitt macht unabhäging von dem Rest Sinn -->
+            <h2>Meine Hobbys</h2>
+
+            <p>In meiner Freizeit beschäftige ich mich gerne mit:</p>
+
+            <ul>  
+                <li>Lesen</li>
+                <li>Serien schauen</li>
+                <li>Musik hören</li>
+                <li>Zeichnen und kreativ sein</li>
+            </ul>
+
+            <p>
+                Mein Lieblingsbuch ist <strong>Fourth Wing</strong>   <!-- strong hebt Text hervor-->
+                und meine Lieblingsserie <em>Ginny & Georgia</em>    <!-- em betont einen Text -->
+            </p>
+            
+        </article>
+
+        <hr>
+
+        <section id="haustiere">
+          <h2>Meine Haustiere</h2>
+
+             <p>meine haustire sind:
+                Meine Beiden Hunde,
+                ein Karter
+                und zwei Butschis</p>
+
+            <figure> 
+                <img src="bilder/Image Aki.jpeg" alt= "Akamaru" width="200">
+                <figcaption>Akamaru</figcaption>
+            </figure>
+            
+
+            <figure> 
+                <img src="bilder/Image Pauli.jpeg" alt= "Pauli" width="200">
+                <figcaption>Paul</figcaption>
+            </figure>
+            
+
+            <figure> 
+                <img src="bilder/Image Con.jpeg" alt= "Con" width="200">
+                <figcaption>Conan</figcaption>
+            </figure>
+
+            <p>Aki ist 6 Jahre alt und ein ziemlicher idiot</p>
+            <p>Pauli ist schon 14 Jahre alt und damit der Älteste. Mein kleiner Liebling</p>
+            <p>Conan ist 7 jare alt und ein Feigling</p>
+
+            <p>Von den Wellensittichen gibt es kein foto</p>
+            <p>Sie Heißen Butschi 7 und 9</p>
+            <p>Warum Butschi 7 und 9? Weil ich sie als kind immer butschi 1,2,3 und so weiter genant habe</p>
+            <p>Anfangs waren es nur zwei, dann vier und immer wenn einer gestorben ist, haben wir ein neuen aus dem Tierheim geholt, damit wir immer eine grade Anzahl an Vögeln hatten und einer nicht alleine sein muss. </p>
+
+
+        </section>
+
+        <hr>
+
+        <aside id="steckbrief">     <!--zusätzliche Informationen-->
+            <h2>Mein Steckbrief</h2>
+
+            <dl>    <!-- dl listet Begriffe und die passenden Angaben dazu auf -->
+                <dt>Name</dt>   <!-- dt ist der Begriff -->
+                    <dd>Kira Kirchner</dd>    <!-- dd enthält die passende Angabe zum Begriff. -->
+
+                <dt>Alter</dt>
+                                        <dd>20</dd>
+
+                <dt>Wohnort</dt>
+                                        <dd>Flensburg</dd>
+
+                <dt>Lieblingstier</dt>
+                                        <dd>Katze</dd>
+
+                <dt>Lieblingsfarbe</dt>
+                                        <dd>Dunkelgrün</dd>
+
+                <dt>Haustire</dt>
+                                        <dd>5</dd>
+            </dl>
+        </aside>
+
+        <hr>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+
+            <p>
+                Du kannst mich per Telefon erreichen:
+                 18946837
+            </p>
+           
+        </section>
+
     </main>
+
+    <footer>    <!-- abschließende Informationen zur Webseite. -->
+        <p>2026 Kira Kirchner</p>
+        <p>Labor 2</p>
+    </footer>
 
 </body>
 </html>
