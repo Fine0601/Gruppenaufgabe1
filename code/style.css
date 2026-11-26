@@ -4,7 +4,7 @@
   --spacing-secondary: 0.5rem; /* 5px / 8px */
 
   /* Corners */
-  --radius-primary: 10px;
+  --radius-primary: 15px;
   --radius-secondary: 5px;
 
   /* Colors */
@@ -15,6 +15,16 @@
   --color-secondary-bg: #1E293B;
   --color-secondary-text: #94A3B8;
   --color-secondary-accent: #60A5FA;
+}
+
+
+
+
+body{
+    background-color: var(--color-primary-bg);
+}
+main > *{
+    border-radius: var(--radius-primary);
 }
 
 main{
@@ -37,3 +47,9 @@ blockquote{
     font-style: italic;
 }
 
+
+a{
+    text-decoration: none;
+    color: var(--color-primary-text);
+    
+}
