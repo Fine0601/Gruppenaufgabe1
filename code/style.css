@@ -4,7 +4,7 @@
   --spacing-secondary: 0.5rem; /* 5px / 8px */
 
   /* Corners */
-  --radius-primary: 10px;
+  --radius-primary: 15px;
   --radius-secondary: 5px;
 
   /* Colors */
@@ -15,6 +15,61 @@
   --color-secondary-bg: #1E293B;
   --color-secondary-text: #94A3B8;
   --color-secondary-accent: #60A5FA;
+
+  --gradient: linear-gradient(170deg, var(--color-primary-accent), var(--color-primary-bg));
+}
+
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+h1, h2 {
+    color: var(--color-primary-accent);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-color: var(--color-primary-bg);
+    
+}
+
+nav{
+    min-height: 3rem;
+    /* background-color: var(--color-secondary-bg); */
+    color: var(--color-secondary-text);
+    border-radius: var(--radius-primary);
+    background-image: var(--gradient);
+    
+}
+
+li{
+    list-style-type: none;
+    margin: var(--spacing-secondary);
+    font-size: 1.2rem;
+}
+nav > *{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: var(--spacing-secondary);
+    border-radius: var(--radius-primary);
+    text-align: center;
+}
+
+
+main > *{
+    border-radius: var(--radius-primary);
+}
+
+header,main,footer{
+    margin: var(--spacing-primary);
+    padding: var(--spacing-primary);
+    border-radius: var(--radius-primary);
+    color: var(--color-primary-text);
 }
 
 main{
@@ -22,18 +77,25 @@ main{
 }
 
 article{
-    border-style: double;
-    background-color: #E8F4FA;
+    background-color: var(--color-secondary-bg);
 }
 
 section{
     border-style: double;
-    background-color: #9ca6ab;
+    border-color: var(--color-secondary-accent);
+    background-color: var(--color-secondary-bg);
+    margin: var(--spacing-primary);
 }
 
 
 blockquote{
-    background-color: #E8F4FA;
+    background-color: var(--color-secondary-bg);
     font-style: italic;
 }
 
+
+a{
+    text-decoration: none;
+    color: var(--color-primary-text);
+    
+}
